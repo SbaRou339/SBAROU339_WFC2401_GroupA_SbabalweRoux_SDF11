@@ -1,13 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login Page</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <div class="Container bg-white flex flex-col">
-        
+
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <div class="top-0 mx-auto bg-white w-full fixed">
+        <div class="relative flex flex-wrap items-center justify-between w-full px-4 py-2">
+            <!-- Main container with navigation and header content -->
+
+            <!-- Cache Image -->
+            <div class="p-4 ">
+                <img class="h-8" src="assets/component-1/navigation/cache-bank-logo.png" alt="">
+            </div>
+
+            <!-- Desktop view of the Menu that gets hidden when we are in mobile view -->
+            <div class="md:flex items-center justify-between gap-12 text-black">
+                Welcome to Cache Bank.
+            </div>
+
+            <!-- Desktop view of the sign up and log in button -->
+            <div class="hidden md:flex items-center gap-8 px-4">
+                <button onclick="window.location.href='signup.html'" class="px-4 py-2 text-sm font-bold text-white bg-green-500 rounded-xl hover:bg-pink-500">
+                    Sign Up
+                </button>
+                <button onclick="window.location.href='index.html'" class="px-4 py-2 text:sm font-bold text-white bg-green-500 rounded-xl hover:bg-pink-500">
+                    Home
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Form -->
+    <div class="flex justify-center items-center h-screen">
+        <div class="max-w-md w-full p-6 bg-white rounded-md shadow-md">
+            <h2 class="text-2xl font-bold mb-6">Log in</h2>
+            <form>
+                <div class="mb-4">
+                    <label for="email" class="block text-sm font-semibold text-gray-600">Email address</label>
+                    <input type="email" id="email" name="email" class="mt-1 block w-full rounded-md border-gray-300
+                    shadow-sm focus:border-blue-400 focus:ring focus:ring-green-400 focus:ring-opacity-50">
+                </div>
+                <div class="mb-4">
+                    <label for="password" class="block text-sm font-semibold text-gray-600">Password</label>
+                    <input type="password" id="password" name="password" class="mt-1 block w-full rounded-md border-gray-300
+                    shadow-sm focus:border-blue-400 focus:ring focus:ring-blue-400 focus:ring-opacity-50">
+                    <a href="#" class="text-sm text-dark-grey-800 hover:text-dark-grey-600 block mt-1">Forget password?</a>
+                </div>
+                <button type="submit" class="w-full bg-green-500 text-white py-2 rounded-md hover:bg-pink-500
+                focus:outline-none focus:ring focus:ring-green-400 focus:ring-opacity-50">
+                    Login
+                </button>
+            </form>
+            <p class="mt-4 text-sm text-gray-600">
+                Any problem logging in? <a href="#" class="text-dark-grey-600">Get Help</a>
+            </p>
+        </div>
     </div>
 </body>
+
 </html>
