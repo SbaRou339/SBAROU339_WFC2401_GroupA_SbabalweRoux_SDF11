@@ -25,3 +25,10 @@ This project was very fun and informative to create. With a clear vision of what
 ### Overall Learning Experience
 
 It has been a great experience learning how to create web for better user experience. This equiped me for future projects so that I can become good at what I do.
+
+
+### Presentation File link
+https://docs.google.com/presentation/d/1J_xglvxVjpjC7hxKE4ymDp7UmFRrpNiNM9xLMzaK00A/edit?usp=sharing
+
+### Presentation Loom video link
+
